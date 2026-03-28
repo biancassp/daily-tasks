@@ -16,7 +16,7 @@ Interações da aplicação:
 Além disso, o projeto conta com uma mensagem motivacional que muda automaticamente de acordo com o dia, incentivando o usuário a se manter focado e cuidar da própria rotina.
 
 ## Preview
-<img src="demonstracao.gif" width="600">
+<img src="daily-tasks-demo.gif" width="600">
 
 ## Tecnologias Utilizadas
 * **HTML5** para estrutura semântica;
