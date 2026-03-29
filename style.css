@@ -4,11 +4,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+    overflow-y: auto;
     margin: 0;
     line-height: 1.5;
     min-height: 100vh;
-    /* Garante que o gradiente ocupe a tela toda */
 }
 
 .titulo {
@@ -179,7 +178,6 @@ li button:hover {
     background-color: #d87c7c;
 }
 
-
 .lista-tarefas::-webkit-scrollbar {
     width: 6px;
 }
@@ -192,6 +190,34 @@ li button:hover {
     background: #d87c7c;
     border-radius: 10px;
 }
+
+
+p.mensagem {
+    font-size: 14px;
+    font-family: "Lora", sans-serif;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin: 0;
+}
+
+div.mensagemDoDia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; 
+    top: 70px;
+    left: 50px;
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    background: #ffffff50;
+    border: 2px solid rgb(250, 237, 231);
+    border-radius: 20px;
+    opacity: 0.6;
+    z-index: 10;
+}
+
 
 @media (max-width: 480px) {
     body {
