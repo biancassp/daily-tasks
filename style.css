@@ -193,51 +193,63 @@ li button:hover {
     border-radius: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
+    div.mensagemDoDia {
+        position: relative;
+        top: 0;
+        left: 0;
+        order: -1;
+        margin: 0 auto 20px auto;
+        width: 80%;
+        height: auto;
+        min-height: 60px;
+        padding: 10px;
+    }
+
+    header, .titulo {
+        order: 0;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
     .dashboard {
-        width: 310px;        
-        height: auto;       
-        min-height: 500px;
-        padding-bottom: 20px;
+        order: 1;
+        width: 95%;
+        max-width: 320px;
+        height: auto;
+        min-height: 450px;
+        padding: 10px;
     }
 
     .inserir {
-        width: 280px;        
-        gap: 5px;            
+        width: 100%;
+        max-width: 260px;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px;
+        margin: 10px auto;
     }
 
     input.campo-texto {
-        width: 120px;        
+        width: 90%;
+        height: 30px;
     }
 
-    .lista-tarefas:empty::before {
-        font-size: 12px;    
-        padding: 0 10px;
-        white-space: normal; 
+    button.adicionar {
+        width: 95%;
+        height: 35px;
     }
-}
 
-div.mensagemDoDia{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 70px;
-    left: 50px;
-    margin-bottom: 10px;
-    text-align: center;
-    padding: 10px;
-    width: 250px;
-    height: 100px;
-    background: #ffffff50;
-    border: 2px solid rgb(250, 237, 231);
-    border-radius: 20px;
-    opacity: 0.6;
-}
-
-p.mensagem{
-    font-size: 14px;
-    font-family:"Lora", sans-serif;
-    overflow-wrap: break-word;
-    text-align:center;
+    .lista-tarefas {
+        max-height: 200px;
+    }
 }
